@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task8a_dao_statistics.Task8A_Control">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <VBox prefHeight="207.0" prefWidth="121.0">
+            <children>
+                <TextField fx:id="id_stat" prefHeight="25.0" prefWidth="133.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <VBox prefHeight="1.0" prefWidth="160.0">
+               <children>
+                      <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonClick" prefHeight="25.0" prefWidth="122.0" text="Поиск">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                      <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonClick" prefHeight="25.0" prefWidth="123.0" text="Удалить" />
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButtonClick" prefHeight="25.0" prefWidth="122.0" text="Добавить">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="updateButton" mnemonicParsing="false" onAction="#updateButtonClick" prefHeight="25.0" prefWidth="123.0" text="Обновить">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <TextField fx:id="placeField" prefHeight="26.0" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="nameField" layoutX="10.0" layoutY="46.0" prefHeight="26.0" prefWidth="100.0" />
+            <TextField fx:id="surnameField" layoutX="10.0" layoutY="205.0" prefHeight="26.0" prefWidth="100.0" />
+            <TextField fx:id="patronymicField" layoutX="10.0" layoutY="231.0" prefHeight="26.0" prefWidth="100.0" />
+            <TextField fx:id="roleField" layoutX="10.0" layoutY="256.0" prefHeight="26.0" prefWidth="100.0" />
+            <TextField fx:id="timeField" layoutX="10.0" layoutY="282.0" prefHeight="26.0" prefWidth="100.0" />
+            </children>
+        </VBox>
+        <ListView fx:id="listTask" prefHeight="207.0" prefWidth="290.0" />
+    </children>
+</VBox>
